@@ -2,7 +2,6 @@
 
 A modern, responsive kiosk display experience designed and prototyped using **Figma Make** and built with **React.js**. This project delivers an intuitive touch-friendly interface optimized for large-screen kiosk environments, digital displays, and self-service experiences.
 
-./assets/banner.png
 
 ## 🚀 Overview
 
