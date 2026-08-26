@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from '../components/Logo'
 import pointerIcon from '@/imports/pointer-icon.svg'
-import awardableBadge from '@/imports/TSM Awardable Badge Bg 1 Black White.png'
+import awardableBadge from '@/imports/TSM-Awardable-Badge-Bg-1-Black-White.png'
 
 type Screen = 'factsheet' | 'casestudy' | 'architecture' | 'video'
 
