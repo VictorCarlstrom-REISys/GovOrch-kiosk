@@ -83,13 +83,6 @@ This project was designed using **Figma Make**, allowing rapid ideation, prototy
 - Node.js (v18+ recommended)
 - npm or yarn
 
-### Clone Repository
-
-```bash
-git clone https://github.com/yourusername/kiosk-display.git
-cd kiosk-display
-```
-
 ### Install Dependencies
 
 ```bash
