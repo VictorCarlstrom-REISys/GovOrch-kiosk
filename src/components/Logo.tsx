@@ -1,4 +1,4 @@
-import logoImg from '@/imports/GovOrchAI_TM_Logo_Horizontal_RGB.png'
+import logoImg from '@/imports/govorchlogo.png'
 
 interface LogoProps {
   size?: 'sm' | 'md' | 'lg'

@@ -1,5 +1,5 @@
 import ScreenShell from '../components/ScreenShell'
-import govOrchIcon from '@/imports/GovOrchAI_Icon.png'
+import govOrchIcon from '@/imports/goicon.png'
 
 const sections = [
   {
