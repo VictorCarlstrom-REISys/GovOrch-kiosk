@@ -1,0 +1,10 @@
+{
+  "description": "An interactive tablet kiosk experience enabling users to explore product info through infographics, case studies, videos, and fact sheets with smooth navigation.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
