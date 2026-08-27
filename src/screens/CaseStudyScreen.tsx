@@ -1,5 +1,6 @@
 import ScreenShell from '../components/ScreenShell'
-import govOrchIcon from '@/imports/goicon.png'
+import govOrchIcon from '@/imports/goicon.svg'
+//const govOrchIcon = new URL('imports/goicon.svg', import.meta.url).href;
 
 const sections = [
   {

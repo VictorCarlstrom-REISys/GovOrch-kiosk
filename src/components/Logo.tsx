@@ -1,4 +1,4 @@
-import logoImg from '@/imports/govorchlogo.png'
+import logoImg from '@/imports/govorchlogo.svg'
 
 interface LogoProps {
   size?: 'sm' | 'md' | 'lg'

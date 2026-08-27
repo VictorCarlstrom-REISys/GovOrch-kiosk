@@ -1,7 +1,8 @@
 import React from 'react'
 import Logo from '../components/Logo'
 import pointerIcon from '@/imports/pointer-icon.svg'
-import awardableBadge from '@/imports/awardable.png'
+import awardableBadge from '@/imports/awardable.svg'
+// const awardableBadge = new URL('@/imports/awardable.png', import.meta.url).href;
 
 type Screen = 'factsheet' | 'casestudy' | 'architecture' | 'video'
 
