@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from '../components/Logo'
 import pointerIcon from '@/imports/pointer-icon.svg'
 import awardableBadge from '@/imports/awardable.svg'
+import sendInfo from '@/imports/send.svg'
 // const awardableBadge = new URL('@/imports/awardable.png', import.meta.url).href;
 
 type Screen = 'factsheet' | 'casestudy' | 'architecture' | 'video'
@@ -216,6 +217,14 @@ export default function HomeScreen({ onNavigate }: Props) {
           animation: 'fade-in-up 0.6s ease 0.3s both',
         }}>
         <button onClick={() => window.open('https://events.teams.microsoft.com/event/2565552a-e690-49bc-95f5-8e569f245795@31996441-7546-4120-826b-df0c3e239671?source=copyLinkLegacyShareEventDialog', '_blank')} className="tile"><img src={pointerIcon} alt="" />&nbsp;<em>Sign up for Demo Day:</em>&nbsp; September 16th <em>&nbsp;at&nbsp;</em> 10am</button>
+      </div>
+      <div style={{
+          width: '100%',
+          maxWidth: 900,
+          display: 'grid',
+          animation: 'fade-in-up 0.6s ease 0.3s both',
+        }}>
+        <button style={{display:'flex', alignItems: 'center', justifyContent:'center', gap:'5px'}} onClick={() => window.open('https://share.hsforms.com/1WKFD4-9nS8OedRUdFigM9Qe7309', '_blank')} className="tile"><img src={sendInfo} alt="" />&nbsp;Send me more info on <span className="tag-line">GovOrch™</span></button>
       </div>
 
       {/* Footer */}
