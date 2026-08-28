@@ -1,4 +1,5 @@
 import ScreenShell from '../components/ScreenShell'
+import govorchScript from '@/imports/govorchscript.svg'
 
 const platforms = ['ADVANA', 'Palantir', 'C3.ai', 'Databricks', 'IBM Cloud Pak', 'Snowflake', 'Amazon S3', 'PostgreSQL']
 
@@ -157,8 +158,8 @@ export default function ArchitectureScreen({ onBack }: { onBack: () => void }) {
   const tealAgent   = '#155040'
   const purpleFill   = '#5C3A9E'
   const purpleText = '#ffffff' 
-  const purpleStroke = '#fff'   // text/border on cylinders
-  //const purpleStroke = '#B493E8'   // text/border on cylinders
+  //const purpleStroke = '#fff'   // text/border on cylinders
+  const purpleStroke = '#B493E8'   // text/border on cylinders
   const purpleArrow  = '#7B4FBF'  // arrow color
 
   return (
@@ -272,18 +273,36 @@ export default function ArchitectureScreen({ onBack }: { onBack: () => void }) {
             fill="#CC2229" letterSpacing="3">EVENT BUS</text>
 
           {/* ── Left DB: Federated Knowledge-Graph ── */}
-          <Cylinder cx={lDbCx} cyTop={dbCyTop} rx={dbRx} ry={dbRy} bodyH={dbBodyH}
+          {/* <Cylinder cx={lDbCx} cyTop={dbCyTop} rx={dbRx} ry={dbRy} bodyH={dbBodyH}
             fill={purpleFill} stroke={purpleStroke} 
-            label1="Federated" label2="Knowledge-Graph" />
+            label1="Federated" label2="Knowledge-Graph" /> */}
+            <Cylinder cx={lDbCx} cyTop={dbCyTop} rx={dbRx} ry={dbRy} bodyH={dbBodyH} fill={purpleFill} stroke={purpleStroke}/>
+            <g className="db-label">
+              <text x={lDbCx} y={dbCyTop + dbBodyH / 2 - 6} textAnchor="middle" fontFamily="Barlow, sans-serif" fontSize="11" fontWeight="600" fill="#fff">
+                Federated
+              </text>
+              <text x={lDbCx} y={dbCyTop + dbBodyH / 2 + 10} textAnchor="middle" fontFamily="Barlow, sans-serif" fontSize="11" fontWeight="600" fill="#fff">
+                Knowledge-Graph
+              </text>
+            </g>
           <BiArrow
             x1={lDbCx + dbRx + arrowGap} y1={dbCyTop + dbBodyH / 2}
             x2={cLeft - arrowGap}        y2={dbCyTop + dbBodyH / 2}
             color={purpleArrow} animated />
 
           {/* ── Right DB: Federated Learning Models Repository ── */}
-          <Cylinder cx={rDbCx} cyTop={dbCyTop} rx={dbRx} ry={dbRy} bodyH={dbBodyH}
+          {/* <Cylinder cx={rDbCx} cyTop={dbCyTop} rx={dbRx} ry={dbRy} bodyH={dbBodyH}
             fill={purpleFill} stroke={purpleStroke}
-            label1="Federated Learning" label2="Models' Repository" />
+            label1="Federated Learning" label2="Models' Repository" /> */}
+            <Cylinder cx={rDbCx} cyTop={dbCyTop} rx={dbRx} ry={dbRy} bodyH={dbBodyH} fill={purpleFill} stroke={purpleStroke}/>
+            <g className="db-label">
+              <text x={rDbCx} y={dbCyTop + dbBodyH / 2 - 6} textAnchor="middle" fontFamily="Barlow, sans-serif" fontSize="11" fontWeight="600" fill="#fff">
+                Federated Learning
+              </text>
+              <text x={rDbCx} y={dbCyTop + dbBodyH / 2 + 10} textAnchor="middle" fontFamily="Barlow, sans-serif" fontSize="11" fontWeight="600" fill="#fff">
+                Models' Repository
+              </text>
+            </g>
           <BiArrow
             x1={cRight + arrowGap}       y1={dbCyTop + dbBodyH / 2}
             x2={rDbCx - dbRx - arrowGap} y2={dbCyTop + dbBodyH / 2}
@@ -325,15 +344,15 @@ export default function ArchitectureScreen({ onBack }: { onBack: () => void }) {
             fill="#ffffff" letterSpacing="1">Description Generator Agent</text>
 
           {/* ── GovOrch.Script ── */}
-          <rect x="10" y={yScript} width="740" height={scriptH} rx="3"
-            fill="#0D1B2E" stroke="#CC2229" strokeWidth="1.5" />
-          <text x="380" y={yScript + scriptH / 2 + 8} textAnchor="middle"
+          <rect x="10" y={yScript} width="740" height={scriptH} rx="3" fill="#0D1B2E" stroke="#CC2229" strokeWidth="1.5" />
+          {/* <text x="380" y={yScript + scriptH / 2 + 8} textAnchor="middle"
             fontFamily="Barlow Condensed, sans-serif" fontWeight="800" fontSize="22" letterSpacing="3">
             <tspan fill="#ffffff">Gov</tspan>
             <tspan fill="#CC2229">Orch</tspan>
             <tspan fill="rgba(255,255,255,0.4)">.</tspan>
             <tspan fill="#ffffff">Script</tspan>
-          </text>
+          </text> */}
+          <image href={govorchScript} x="380" y={yScript + 6} width="220" height="30" transform="translate(-105, 0)" />
         </svg>
       </div>
 

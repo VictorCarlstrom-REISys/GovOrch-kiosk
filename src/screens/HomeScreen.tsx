@@ -180,10 +180,11 @@ export default function HomeScreen({ onNavigate }: Props) {
             lineHeight: 1.6,
           }}
         >
+          <br></br>
           From <strong>Fragmented Data</strong> to <strong>Mission-Ready Decisions</strong><br />
-            <span className="tag-line">GovOrch™</span> AI solves data interoperability across existing defense systems through governed, reusable orchestration<br /><br />
-          <br />
-          Touch a section below to learn more.
+            <span className="tag-line">GovOrch™</span> AI solves data interoperability across defense systems through governed, reusable orchestration<br /><br />
+          
+          
         </div>
         </div>
       </div>
@@ -214,7 +215,7 @@ export default function HomeScreen({ onNavigate }: Props) {
           display: 'grid',
           animation: 'fade-in-up 0.6s ease 0.3s both',
         }}>
-        <button onClick={() => window.open('https://events.teams.microsoft.com/event/2565552a-e690-49bc-95f5-8e569f245795@31996441-7546-4120-826b-df0c3e239671?source=copyLinkLegacyShareEventDialog', '_blank')} className="tile"><img src={pointerIcon} alt="" />&nbsp;<em>Sign up for Demo Day:</em>&nbsp; September 16th <em>&nbsp;at&nbsp;</em> 10am.</button>
+        <button onClick={() => window.open('https://events.teams.microsoft.com/event/2565552a-e690-49bc-95f5-8e569f245795@31996441-7546-4120-826b-df0c3e239671?source=copyLinkLegacyShareEventDialog', '_blank')} className="tile"><img src={pointerIcon} alt="" />&nbsp;<em>Sign up for Demo Day:</em>&nbsp; September 16th <em>&nbsp;at&nbsp;</em> 10am</button>
       </div>
 
       {/* Footer */}

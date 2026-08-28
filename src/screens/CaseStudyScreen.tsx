@@ -1,5 +1,7 @@
 import ScreenShell from '../components/ScreenShell'
 import govOrchIcon from '@/imports/goicon.svg'
+import awardableWhite from '@/imports/awardablewhite.svg'
+
 //const govOrchIcon = new URL('imports/goicon.svg', import.meta.url).href;
 
 const sections = [
@@ -37,19 +39,19 @@ const workflowSteps = [
     label: 'Ask GovOrch',
     color: '#CC2229',
     heading: 'Mission Users Query Across Connected Data',
-    body: 'An aviation sustainment officer starts by asking what data is available. GovOrch summarizes relevant maintenance, telemetry, supply, finance, contract, and readiness-related sources — the entire landscape in one workspace, including which sources are available and what kinds of questions each can support.',
+    body: 'An aviation sustainment officer starts by asking what data is available. GovOrch summarizes relevant maintenance, telemetry, supply, finance, contract, and readiness-related sources, the entire landscape in one workspace, including which sources are available and what kinds of questions each can support.',
     subItems: [
       {
         label: 'Trace Readiness Lineage',
-        body: 'The officer asks how to trace aircraft readiness across sensor readings and open maintenance work orders. GovOrch maps the lineage across sensor telemetry, Army GCSS maintenance data, and PUBLOG supply information — showing which systems are involved, how the information connects, and where readiness indicators are coming from.',
+        body: 'The officer asks how to trace aircraft readiness across sensor readings and open maintenance work orders. GovOrch maps the lineage across sensor telemetry, Army GCSS maintenance data, and PUBLOG supply information, showing which systems are involved, how the information connects, and where readiness indicators are coming from.',
       },
       {
         label: 'Identify Emerging Degradation',
-        body: 'To identify emerging readiness degradation, the officer asks which aircraft has both an active anomaly flag and an open maintenance work order. GovOrch correlates telemetry, maintenance, and logistics data to identify the specific asset at risk — including fault correlation, maintenance status, and readiness impact. The officer can see not only the answer, but the path behind it.',
+        body: 'To identify emerging readiness degradation, the officer asks which aircraft has both an active anomaly flag and an open maintenance work order. GovOrch correlates telemetry, maintenance, and logistics data to identify the specific asset at risk, including fault correlation, maintenance status, and readiness impact. The officer can see not only the answer, but the path behind it.',
       },
       {
         label: 'Interactive Visualization',
-        body: 'GovOrch converts the analysis into an interactive visualization. An officer can compare open work orders by priority level from Army GCSS — covering 104 open orders across 65 equipment users. Nearly half the open backlog is urgent or critical, and the relatively high number of Very High priority open orders may warrant immediate attention.',
+        body: 'GovOrch converts the analysis into an interactive visualization. An officer can compare open work orders by priority level from Army GCSS, covering 104 open orders across 65 equipment users. Nearly half the open backlog is urgent or critical, and the relatively high number of Very High priority open orders may warrant immediate attention.',
       },
     ],
   },
@@ -159,7 +161,7 @@ export default function CaseStudyScreen({ onBack }: { onBack: () => void }) {
           Mission Scale
         </div>
         <p style={{ fontFamily: "'Roboto Condensed', sans-serif", fontWeight: 700, fontSize: 'clamp(16px, 2vw, 22px)', color: '#ffffff', lineHeight: 1.5, margin: '0 0 20px' }}>
-          That same orchestration pattern scales across Department workflows — from sustainment and readiness to audit, acquisition, ISR fusion, and joint fires.
+          That same orchestration pattern scales across Department workflows: from sustainment and readiness to audit, acquisition, ISR fusion, and joint fires.
         </p>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginBottom: 20 }}>
           {['No more stovepipes', 'No more spreadsheet warfare', 'No more fragile custom integrations'].map((t) => (
@@ -170,12 +172,17 @@ export default function CaseStudyScreen({ onBack }: { onBack: () => void }) {
           ))}
         </div>
         <div style={{ height: 1, background: 'rgba(204,34,41,.75)', marginBottom: 20 }} />
-        <p style={{ fontFamily: "'Roboto Condensed', sans-serif", fontWeight: 800, fontSize: 'clamp(17px, 2.2vw, 24px)', color: '#ffffff', letterSpacing: '0.06em', textTransform: 'uppercase', margin: '0 0 10px' }}>
-          Just governed, agentic data orchestration.
-        </p>
-        <p style={{ fontFamily: "'Roboto', sans-serif", fontSize: 'clamp(12px, 1.4vw, 14px)', color: 'rgba(255,255,255,0.75', margin: 0, letterSpacing: '0.04em' }}>
-          GovOrch AI — Secure. Governed. Mission-driven. Now awardable on the CDAO Tradewinds Solutions Marketplace.
-        </p>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+        <span>
+          <p style={{ fontFamily: "'Roboto Condensed', sans-serif", fontWeight: 800, fontSize: 'clamp(17px, 2.2vw, 24px)', color: '#ffffff', letterSpacing: '0.06em', textTransform: 'uppercase', margin: '0 0 10px' }}>
+            Just governed, agentic data orchestration.
+          </p>
+          <p style={{ fontFamily: "'Roboto', sans-serif", fontSize: 'clamp(12px, 1.4vw, 14px)', color: 'rgba(255,255,255,0.75)', margin: 0, letterSpacing: '0.04em' }}>
+            GovOrch AI — Secure. Governed. Mission-driven. Now awardable on the CDAO Tradewinds Solutions Marketplace.
+          </p>
+        </span>
+          <img height="80px" width="80px" src={awardableWhite} alt="CDAO Tradewinds Solutions Marketplace" />
+        </div>
       </div>
 
     </ScreenShell>

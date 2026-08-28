@@ -1,4 +1,5 @@
 import ScreenShell from '../components/ScreenShell'
+import govorchScript from '@/imports/govorchscript.svg'
 
 const capabilities = [
   {
@@ -172,7 +173,7 @@ export default function FactSheetScreen({ onBack }: { onBack: () => void }) {
             // maxWidth: 820,
           }}
         >
-          Across the Department of War, the challenge is not a lack of data — it is a lack of
+          Across the Department of War, the challenge is not a lack of data, it is a lack of
           orchestration. Data is spread across thousands of systems, multiple enclaves, and security
           boundaries, and even with platforms like Advana, Vantage, PANDA, and Maven Smart System,
           teams still rely on manual reconciliation to answer critical questions. This fragmentation
@@ -265,7 +266,7 @@ export default function FactSheetScreen({ onBack }: { onBack: () => void }) {
             <strong style={{ color: '#CC2229' }}>GovOrch™ AI</strong> is REI Systems' open, agentic
             AI-powered data orchestration platform built to transform how the Department operates
             across fragmented systems. At TRL 7, it works within the environments the Department
-            already owns — no rip-and-replace required. It automatically discovers data, understands
+            already owns, no rip-and-replace required. It automatically discovers data, understands
             schemas, and generates governed pipelines that deliver insights in real time without
             centralizing data.
           </p>
@@ -516,7 +517,7 @@ export default function FactSheetScreen({ onBack }: { onBack: () => void }) {
         >
           {/* Script wordmark */}
           <div style={{ marginBottom: 16 }}>
-            <div
+            {/* <div
               style={{
                 fontFamily: "'Roboto Condensed', sans-serif",
                 fontWeight: 800,
@@ -529,7 +530,8 @@ export default function FactSheetScreen({ onBack }: { onBack: () => void }) {
               <span style={{ color: '#CC2229' }}>Orch</span>
               <span style={{ color: 'rgba(255,255,255,0.5)' }}>.</span>
               <span style={{ color: '#ffffff' }}>Script</span>
-            </div>
+            </div> */}
+            <img src={govorchScript} alt="GovOrch.Script" style={{ width: '100%', maxWidth: 240 }} />
             <div
               style={{
                 marginTop: 4,
